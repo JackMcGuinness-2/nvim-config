@@ -24,6 +24,8 @@ return require("packer").startup(function(use)
 
 	-- UI
 	use("nvim-lualine/lualine.nvim")
+	use("akinsho/toggleterm.nvim")
+	use("romgrk/barbar.nvim")
 
 	-- treesitter
 	use("nvim-treesitter/nvim-treesitter")
