@@ -1,5 +1,5 @@
 -- colourscheme
-require("core.plugin_config.gruvbox")
+require("core.plugin_config.colourscheme")
 
 -- UI
 require("core.plugin_config.lualine")
@@ -14,3 +14,6 @@ require("core.plugin_config.completions")
 require("core.plugin_config.mason")
 require("core.plugin_config.null_ls")
 require("core.plugin_config.lsp")
+
+require("core.plugin_config.nvim-dap")
+require("core.plugin_config.go-nvim")

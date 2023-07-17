@@ -84,15 +84,20 @@ _G.packer_plugins = {
     path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["gruvbox.nvim"] = {
+  ["go.nvim"] = {
     loaded = true,
-    path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
+    path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/go.nvim",
+    url = "https://github.com/ray-x/go.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -118,6 +123,27 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-go"] = {
+    config = { "\27LJ\2\n8\0\2\5\0\3\0\a6\2\0\0'\4\1\0B\2\2\0029\2\2\2\18\4\1\0B\2\2\1K\0\1\0\nsetup\vdap-go\frequire\0" },
+    loaded = true,
+    path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
+    url = "https://github.com/leoluz/nvim-dap-go"
+  },
+  ["nvim-dap-projects"] = {
+    loaded = true,
+    path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/nvim-dap-projects",
+    url = "https://github.com/ldelossa/nvim-dap-projects"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -162,6 +188,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-dap-go
+time([[Config for nvim-dap-go]], true)
+try_loadstring("\27LJ\2\n8\0\2\5\0\3\0\a6\2\0\0'\4\1\0B\2\2\0029\2\2\2\18\4\1\0B\2\2\1K\0\1\0\nsetup\vdap-go\frequire\0", "config", "nvim-dap-go")
+time([[Config for nvim-dap-go]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

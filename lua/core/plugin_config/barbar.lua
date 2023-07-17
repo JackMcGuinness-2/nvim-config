@@ -6,3 +6,5 @@ map("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
 
 map("n", "<C-<>", "<Cmd>BufferMovePrevious<CR>", opts)
 map("n", "<C->>", "<Cmd>BufferMoveNext<CR>", opts)
+
+map("n", "<leader>x", "<Cmd>BufferClose<CR>", opts)

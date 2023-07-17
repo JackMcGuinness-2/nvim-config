@@ -21,8 +21,8 @@ require("nvim-tree").setup({
 					ignored = "IGNORED",
 				},
 			},
-			special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md", "go.mod" },
 		},
+		special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md", "go.mod" },
 	},
 })
 

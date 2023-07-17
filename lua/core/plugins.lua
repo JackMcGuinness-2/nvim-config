@@ -16,7 +16,8 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	-- colourschemes
-	use("ellisonleao/gruvbox.nvim")
+	--use("ellisonleao/gruvbox.nvim")
+	use{"catppuccin/nvim", as = "catppuccin"}
 
 	-- nerd tree
 	use("nvim-tree/nvim-tree.lua")
@@ -43,10 +44,25 @@ return require("packer").startup(function(use)
 	use("neovim/nvim-lspconfig")
 	use("jose-elias-alvarez/null-ls.nvim")
 
+	-- debugging
+	use("mfussenegger/nvim-dap")
+	use({
+		"leoluz/nvim-dap-go",
+		dependencies = "mfussenegger/nvim-dap",
+		config = function(_, opts)
+			require("dap-go").setup(opts)
+		end,
+	})
+	use("rcarriga/nvim-dap-ui")
+	use("ldelossa/nvim-dap-projects")
+
 	-- completion
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-nvim-lsp")
 	use("L3MON4D3/LuaSnip")
+
+	-- go
+	use("ray-x/go.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
