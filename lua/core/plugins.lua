@@ -17,7 +17,7 @@ return require("packer").startup(function(use)
 
 	-- colourschemes
 	--use("ellisonleao/gruvbox.nvim")
-	use{"catppuccin/nvim", as = "catppuccin"}
+	use({ "catppuccin/nvim", as = "catppuccin" })
 
 	-- nerd tree
 	use("nvim-tree/nvim-tree.lua")
@@ -60,6 +60,7 @@ return require("packer").startup(function(use)
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-nvim-lsp")
 	use("L3MON4D3/LuaSnip")
+	use("m4xshen/autoclose.nvim")
 
 	-- go
 	use("ray-x/go.nvim")

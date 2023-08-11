@@ -17,3 +17,5 @@ require("core.plugin_config.lsp")
 
 require("core.plugin_config.nvim-dap")
 require("core.plugin_config.go-nvim")
+
+require("core.plugin_config.autoclose")

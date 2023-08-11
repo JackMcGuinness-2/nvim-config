@@ -20,6 +20,11 @@
         "/usr/local/share/nvim/runtime/pack/dist/opt/matchit",
         "/usr/local/lib/nvim",
         "/Users/jackmcguinness/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after",
-        "${3rd}/luassert/library"
+        "${3rd}/luassert/library",
+        "${3rd}/lfs/library"
+    ],
+    "diagnostics.globals": [
+        "vim",
+        "lfs"
     ]
 }
